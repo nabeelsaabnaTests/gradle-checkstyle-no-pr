@@ -38,5 +38,23 @@
 				"prEditNotification"
 			]
 		}
-	]
+	],
+  "logLevelRemap": [
+    {
+      "matchMessage": "Returning cached value",
+      "newLogLevel": "debug"
+    },
+    {
+      "matchMessage": "Cache miss",
+      "newLogLevel": "debug"
+    },
+    {
+      "matchMessage": "Saving cached value",
+      "newLogLevel": "debug"
+    },
+    {
+      "matchMessage": "/^cache.get/",
+      "newLogLevel": "info"
+    }
+  ]
 }
